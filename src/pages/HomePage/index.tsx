@@ -15,7 +15,7 @@ export default function HomePage() {
     <div>
       <MySlider />
 
-      <Name/>
+      <Name label="شرکت پویان گستران سدید"/>
 
       
 
@@ -47,6 +47,7 @@ export default function HomePage() {
           lable2=" جرای طرح دیسپچینگ توسط شرکت های مورد تایید"
         />
       </div>
+      <Name label="نهاد ها و شرکت های همکار"/>
       <Customer/>
       <Footer/>
     </div>

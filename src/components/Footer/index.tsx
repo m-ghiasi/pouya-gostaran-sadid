@@ -3,7 +3,7 @@ import enamad from "../../assets/enamad.png"
 export default function Footer(){
 
     return(
-        <footer className="p-4 w-full h-64 bg-gradient-to-b from-red-600 via-white to-green-600 grid grid-cols-3">
+        <footer className="p-4 w-full h-80 bg-gradient-to-b from-red-600 via-white to-green-600 grid grid-cols-3">
             <div>
                 <h1 className="font-bold text-2xl">ارتبات با ما </h1>
                 <br />
