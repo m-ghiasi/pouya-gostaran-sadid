@@ -81,7 +81,7 @@ export default function Header() {
           </NavLink>
         </nav>
         <NavLink to={"/HomePage"} className= "hidden md:flex items-center">
-          <p className="text-2xl">پویا گستران سدید</p>
+          <p className="text-2xl font-bold">پویا گستران سدید</p>
           <img src={logo} className=" w-20 h-20" alt="" />
         </NavLink>
         

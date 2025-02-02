@@ -4,3 +4,6 @@
 .my-border {
   @apply border-b-2 border-green-600;
 }
+.my-link {
+  @apply cursor-pointer font-bold hover:text-red-600 
+}
