@@ -7,6 +7,8 @@ import tanzimat from "../../assets/tanzimat.png";
 import kahab from "../../assets/kahab.png";
 import monitor from "../../assets/monitor.jpg";
 import Name from "../../components/Name";
+import Footer from "../../components/Footer";
+import Customer from "../../components/Customer";
 
 export default function HomePage() {
   return (
@@ -45,6 +47,8 @@ export default function HomePage() {
           lable2=" جرای طرح دیسپچینگ توسط شرکت های مورد تایید"
         />
       </div>
+      <Customer/>
+      <Footer/>
     </div>
   );
 }
