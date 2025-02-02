@@ -8,13 +8,14 @@ import ContactUs from "./pages/ContactUs";
 import About from "./pages/About";
 import Layout from "./pages/Layout";
 
-
 function App() {
   return (
     <div className="">
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route path="HomePage" element={<HomePage />}></Route>
+        <Route path="" element={<Layout />}>
+          <Route path="/" element={<HomePage />}>
+            <Route  path="HomePage" element={<HomePage />}></Route>
+          </Route>
 
           <Route path="Managers" element={<Managers />}></Route>
           <Route path="Services" element={<Services />}></Route>
