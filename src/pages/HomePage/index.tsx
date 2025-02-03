@@ -9,8 +9,28 @@ import monitor from "../../assets/monitor.jpg";
 import Name from "../../components/Name";
 import Footer from "../../components/Footer";
 import Customer from "../../components/Customer";
+import {  Outlet } from "react-router";
 
 export default function HomePage() {
+type ItmTypes={
+  to:string;
+  lable:string;
+  lable2:string;
+  srcImage:any
+}
+const data:ItmTypes[]= [
+  {to:"paper" , lable:"منشور", lable2:" منشور برند شرکت پویا گستران سدید ",srcImage:manshor},
+  {to:"CheshmAndaz" , lable:"چشم اندار", lable2:" استراتژی و چشم انداز شرکت پویا گستران سدید",srcImage:binahayat},
+  {to:"Ability" , lable:"توانایی ها", lable2:" توانایی و دستور عمل های در حال اجرا",srcImage:tanzimat},
+  {to:"License" , lable:"گواهی نامه ها", lable2:"گواهی رضایت مشتری و ISO",srcImage:gavahinameh},
+  {to:"kahab" , lable:"کهاب", lable2:" طرح زیست محیطی کهاب",srcImage:kahab},
+  {to:"Dispaching" , lable:"دیسپاچینگ", lable2:"جرای طرح دیسپچینگ توسط شرکت های مورد تایید",srcImage:monitor},
+
+
+]
+
+
+
   return (
     <div>
       <MySlider />
@@ -20,36 +40,23 @@ export default function HomePage() {
       
 
       <div className=" flex flex-col p-4 md:grid grid-cols-3 gap-y-3">
-        <Card
-          srcImage={manshor}
-          lable="منشور"
-          lable2=" منشور برند شرکت پویا گستران سدید "
-        />
-        <Card
-          srcImage={binahayat}
-          lable="چشم اندار"
-          lable2=" استراتژی و چشم انداز شرکت پویا گستران سدید "
-        />
-        <Card
-          srcImage={tanzimat}
-          lable="توانایی ها"
-          lable2=" توانایی و دستور عمل های در حال اجرا"
-        />
-        <Card
-          srcImage={gavahinameh}
-          lable="گواهی نامه ها"
-          lable2=" گواهی رضایت مشتری و ISO"
-        />
-        <Card srcImage={kahab} lable="کهاب" lable2=" طرح زیست محیطی کهاب" />
-        <Card
-          srcImage={monitor}
-          lable="دیسپاچینگ"
-          lable2=" جرای طرح دیسپچینگ توسط شرکت های مورد تایید"
-        />
+        {data.map((d)=>(
+          <Card
+          to={d.to}
+          key={d.to}
+          srcImage={d.srcImage}
+          lable={d.lable}
+          lable2={d.lable2}/>
+
+        ))}
+
+
+
       </div>
       <Name label="نهاد ها و شرکت های همکار"/>
       <Customer/>
       <Footer/>
+      <Outlet/>
     </div>
   );
 }
