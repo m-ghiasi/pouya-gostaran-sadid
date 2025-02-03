@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router";
-import logo from "../../assets/logo-2.webp";
+
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../Logo";
 
