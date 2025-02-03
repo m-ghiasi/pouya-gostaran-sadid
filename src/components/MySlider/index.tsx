@@ -12,14 +12,15 @@ export default function MySlider() {
   return (
     <Swiper slidesPerView={1} spaceBetween={20}>
       <SwiperSlide>
+        <img className="w-full" src={oil7} />
+      </SwiperSlide>
+      <SwiperSlide>
         <img className="w-full" src={oil2} />
       </SwiperSlide>
       <SwiperSlide>
         <img className="w-full" src={oil6} />
       </SwiperSlide>
-      <SwiperSlide>
-        <img className="w-full" src={oil7} />
-      </SwiperSlide>
+      
 
       <SwiperSlide>
         <img className="w-full" src={oil4} />
