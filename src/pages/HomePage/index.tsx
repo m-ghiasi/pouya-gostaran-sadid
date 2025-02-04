@@ -76,14 +76,47 @@ export default function HomePage() {
           isVisibel ? "translate-x-0" : "translate-x-[200%]"
         }  absolute z-5
          right-[5%] md:right-[10%]
-          top-[30vh] md:top-[40vh]
-           bg-red-600
-            p-3 md:p-5
+          top-[23vh] md:top-[45vh]
+           bg-green-600
+            p-2 md:p-5
              text-white 
               rounded-xl md:rounded-2xl 
               font-bold
-               transform transition-transform duration-500`}
+               transform transition-transform duration-500
+               text-sm md:text-xl`}
       />
+     
+        <Button
+          label="جهت همکاری"
+          className={`${
+            isVisibel ? "translate-x-0" : "translate-x-[200%]"
+          }  absolute z-5
+         right-[5%] md:right-[10%]
+          top-[30vh] md:top-[60vh]
+           bg-red-600
+            p-2 md:p-5
+             text-white 
+              rounded-xl md:rounded-2xl 
+              font-bold
+               transform transition-transform duration-500
+               text-sm md:text-xl`}
+        />
+        <Button
+          label="موقعیت مکانی انبار"
+          className={`${
+            isVisibel ? "translate-x-0" : "translate-x-[250%]"
+          }  absolute z-5
+         right-[3%] md:right-[22%]
+          top-[30vh] md:top-[60vh]
+           bg-red-600
+            p-2 md:p-5
+             text-white 
+              rounded-xl md:rounded-2xl 
+              font-bold
+               transform transition-transform duration-500
+               text-sm md:text-xl`}
+        />
+      
 
       <Name label="شرکت پویان گستران سدید" />
 
