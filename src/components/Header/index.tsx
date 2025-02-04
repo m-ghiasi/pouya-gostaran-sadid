@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router";
-
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../Logo";
 

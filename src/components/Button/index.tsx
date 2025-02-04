@@ -1,7 +1,7 @@
-type PropTypes = {label:string; onClick ?: () => void}
+type PropTypes = {className:string;label:string; onClick ?: () => void}
 
 export default function Button(props:PropTypes){
     return(
-        <button>{props.label}</button>
+        <button className={props.className}>{props.label}</button>
     )
 }
