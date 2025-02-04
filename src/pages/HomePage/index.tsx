@@ -106,7 +106,7 @@ export default function HomePage() {
           className={`${
             isVisibel ? "translate-x-0" : "translate-x-[250%]"
           }  absolute z-5
-         right-[3%] md:right-[22%]
+         right-[30%] md:right-[22%]
           top-[30vh] md:top-[60vh]
            bg-red-600
             p-2 md:p-5
